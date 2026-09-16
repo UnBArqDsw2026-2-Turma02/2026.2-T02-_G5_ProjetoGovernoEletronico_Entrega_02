@@ -36,8 +36,6 @@ Referências utilizadas:
 
 ### Diagrama de Componentes
 
-![Diagrama de Componentes](Base/Relatórios/ExtrasSubEquipe_01/Diagrama_de_Componentes_V1_1.png)
-
 
 **Ficha Técnica - Componentes:**
 * **Autores:** Pedro Henrique Martins Silva (Estrutura inicial v1.0) e Luiz Henrique Pallavicini (Refatoração para v1.1 ajustando regras UML).
