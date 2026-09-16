@@ -7,6 +7,13 @@
   - [1. Desenho de Software (Modelagem)](Base/1.Modelagem.md)
   - **Relatórios**
     - [1.1.1. SubEquipe_01](Base/Relatórios/1.1.1.SubEquipe_01.md)
+      - [Diagrama de Componentes V1.0 (PDF)](https://unbarqdsw2026-2-turma02.github.io/2026.2-T02-_G5_ProjetoGovernoEletronico_Entrega_02/Base/Relat%C3%B3rios/ExtrasSubEquipe_01/Diagrama_de_Componentes_V1.pdf)
+      - [Diagrama de Componentes V1.0 (imagem)](Base/Relatórios/ExtrasSubEquipe_01/Diagrama_de_Componentes_V1.png)
+      - [Diagrama de Componentes V0.1 (imagem)](Base/Relatórios/ExtrasSubEquipe_01/Diagrama_de_Componentes_V01.png)
+      - [Diagrama de Sequência V0.1 (PDF)](https://unbarqdsw2026-2-turma02.github.io/2026.2-T02-_G5_ProjetoGovernoEletronico_Entrega_02/Base/Relat%C3%B3rios/ExtrasSubEquipe_01/Diagrama_de_Sequencia_V01.pdf)
+      - [Diagrama de Sequência V1.0 (PDF)](https://unbarqdsw2026-2-turma02.github.io/2026.2-T02-_G5_ProjetoGovernoEletronico_Entrega_02/Base/Relat%C3%B3rios/ExtrasSubEquipe_01/Diagrama_de_Sequencia_V1.pdf)
+      - [Diagrama de Sequência V1.0 (imagem)](Base/Relatórios/ExtrasSubEquipe_01/Diagrama_de_Sequencia_V1.png)
+      - [Insumo das alterações UML](Base/Relatórios/ExtrasSubEquipe_01/InsumoADS.png)
     - [1.1.2. SubEquipe_02](Base/Relatórios/1.1.2.SubEquipe_02.md)
     - [1.1.3. SubEquipe_03](Base/Relatórios/1.1.3.SubEquipe_03.md)
   - [1.2. Participações - Modelagem](Base/1.2.ParticipacoesModelagem.md)
