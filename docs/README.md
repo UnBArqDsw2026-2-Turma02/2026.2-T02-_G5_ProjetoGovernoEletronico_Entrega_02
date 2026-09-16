@@ -9,7 +9,7 @@
 | Matrícula | Aluno |
 | --- | --- |
 | 23/1029270 | Pedro Henrique Martins Silva |
-| [241012329] | Luiz Henrique Pallavicini |
+| 24/1012329 | Luiz Henrique Pallavicini |
 
 ## Sobre
 
