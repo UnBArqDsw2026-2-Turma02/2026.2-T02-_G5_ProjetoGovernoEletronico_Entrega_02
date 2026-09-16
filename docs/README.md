@@ -9,7 +9,7 @@
 | Matrícula | Aluno |
 | --- | --- |
 | 23/1029270 | Pedro Henrique Martins Silva |
-| xx/xxxxxx | xxxx xxxx |
+| [241012329] | Luiz Henrique Pallavicini |
 
 ## Sobre
 
@@ -28,23 +28,20 @@ A entrega contempla modelos estáticos e dinâmicos do sistema, buscando represe
 A modelagem foi desenvolvida utilizando como referência a documentação oficial da UML e exemplos de diagramas produzidos em entregas anteriores da disciplina.
 
 Referências utilizadas:
-
-- Documentação UML - Component Diagrams:
-  https://www.uml-diagrams.org/component.html
-
-- Documentação UML - Sequence Diagrams:
-  https://www.uml-diagrams.org/sequence-diagrams.html
-
-- Portal Informa.BR:
-  https://informabr.cgu.gov.br
+- Documentação UML - Component Diagrams: https://www.uml-diagrams.org/component.html
+- Documentação UML - Sequence Diagrams: https://www.uml-diagrams.org/sequence-diagrams.html
+- Portal Informa.BR: https://informabr.cgu.gov.br
 
 ## Screenshots da Segunda Entrega
 
 ### Diagrama de Componentes
 
-![Diagrama de Componentes](Base/Relatórios/ExtrasSubEquipe_01/Diagrama_de_Componentes_V1.png)
+![Diagrama de Componentes](Base/Relatórios/ExtrasSubEquipe_01/Diagrama_de_Componentes_V1_1.png)
 
-O Diagrama de Componentes representa a organização estrutural do Informa.BR, considerando os principais módulos e relacionamentos entre as camadas do sistema.
+
+**Ficha Técnica - Componentes:**
+* **Autores:** Pedro Henrique Martins Silva (Estrutura inicial v1.0) e Luiz Henrique Pallavicini (Refatoração para v1.1 ajustando regras UML).
+* **Link Editável (Figma):** [Acessar Diagrama de Componentes v1.1](https://www.figma.com/make/jAnwuaCUnUyl42EucAvKer/diagrama-de-componentes-v1.1?t=AQkyZDaNwsZcXn1X-20&fullscreen=1)
 
 ---
 
@@ -52,7 +49,9 @@ O Diagrama de Componentes representa a organização estrutural do Informa.BR, c
 
 ![Diagrama de Sequência](Base/Relatórios/ExtrasSubEquipe_01/Diagrama_de_Sequencia_V1.png)
 
-O Diagrama de Sequência representa o fluxo de criação de um pedido de acesso à informação.
+**Ficha Técnica - Sequência:**
+* **Autores:** Luiz Henrique Pallavicini (Rascunho Inicial v1.0) e Pedro Henrique Martins Silva (Modelagem Dinâmica).
+* **Link Editável (Figma):** [Acessar Rascunho do Diagrama de Sequência](https://www.figma.com/make/Qe1S4LmGmd7aP9wgsaUF54/Rascunho-de-Diagrama?t=ba2uUdZsLMrTomvI-20&fullscreen=1)
 
 ## Há algo a ser executado?
 
@@ -62,5 +61,9 @@ O Diagrama de Sequência representa o fluxo de criação de um pedido de acesso 
 
 Não há aplicação ou código executável associado aos artefatos desta entrega. O objetivo desta etapa é exclusivamente a elaboração e documentação dos modelos UML do sistema estudado.
 
-## Informações Complementares
+## Informações Complementares e Contribuições
 
+Para garantir a transparência da evolução do projeto, as seguintes participações diretas foram registradas nesta entrega:
+
+* **Luiz Henrique Pallavicini:** Responsável pela análise crítica e evolução do *Diagrama de Componentes*, gerando a **versão 1.1** com os devidos ajustes nas regras e notações da UML. Também atuou na ideação primária do fluxo dinâmico, elaborando o **rascunho inicial** que baseou o Diagrama de Sequência e relatorio de IA generativa.
+* **Pedro Henrique Martins Silva:** Responsável pela diagramação estática original (v1.0) do *Diagrama de Componentes*, pela consolidação da diagramação dinâmica do *Diagrama de Sequência*, configuração do repositório/GitHub Pages e relatório de IA.
