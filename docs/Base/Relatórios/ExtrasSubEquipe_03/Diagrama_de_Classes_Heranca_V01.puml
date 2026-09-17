@@ -1,0 +1,181 @@
+@startuml Diagrama_de_Classes_Heranca_V01
+' =============================================================
+' Projeto Informa.BR | Grupo 05 | FGA0208 - Entrega 02
+' Modelagem Estatica (FOCO_01) - Diagrama de Classes (Heranca)
+' Dominio LAI e Privacidade de Dados (CGU / Informa.BR)
+' Versao 1.0 (refatorada) - SubEquipe 03
+' =============================================================
+
+title "Diagrama de Classes — Hierarquia de Herança e Domínio LAI | Informa.BR | G5 | SubEquipe 03 | v1.0"
+
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam nodesep 55
+skinparam ranksep 45
+skinparam classAttributeIconSize 0
+skinparam classBackgroundColor #FFFFFF
+skinparam classBorderColor #2C3E50
+skinparam classFontColor #1A1A1A
+skinparam classFontStyle bold
+skinparam classArrowColor #2C3E50
+skinparam arrowColor #2C3E50
+skinparam noteBackgroundColor #FEF9E7
+skinparam noteBorderColor #D4AC0D
+hide circle
+hide empty members
+
+' ==========================================================
+' HIERARQUIA 1: USUÁRIOS E ATORES
+' ==========================================================
+abstract class "Usuário" as Usuario {
+  - id : UUID
+  - nome : String
+  - email : String
+  + autenticar() : Boolean
+}
+
+class "Cidadão" as Cidadao {
+  - cpf : String
+  - telefone : String
+  - nivelContaGovBr : String
+  + protocolarPedido(p : PedidoAcesso) : void
+  + interporRecurso(r : Recurso) : void
+}
+
+class "Agente Público" as AgentePublico {
+  - matrícula : String
+  - cargo : String
+  + analisarPedido(p : PedidoAcesso) : void
+  + elaborarResposta(r : Resposta) : void
+}
+
+class "Autoridade Julgadora" as Autoridade {
+  - nivelInstancia : int
+  - esferaRecursal : String
+  + julgarRecurso(r : Recurso) : void
+}
+
+Usuario <|-- Cidadao
+Usuario <|-- AgentePublico
+AgentePublico <|-- Autoridade
+
+' ==========================================================
+' HIERARQUIA 2: MANIFESTAÇÕES / DEMANDAS LAI
+' ==========================================================
+abstract class "Manifestação" as Manifestacao {
+  - protocolo : String
+  - dataRegistro : Date
+  - descricao : String
+  - status : StatusManifestação
+  + consultarStatus() : StatusManifestação
+  + cancelar() : void
+}
+
+class "Pedido de Acesso" as PedidoAcesso {
+  - anonimo : Boolean
+  - protecaoIdentidade : Boolean
+  - formaRecebimento : String
+  + protocolar() : void
+  + solicitarComplementacao() : void
+  + complementar(texto : String) : void
+}
+
+abstract class "Recurso" as Recurso {
+  - justificativa : String
+  - prazoJulgamentoDias : int
+  + interpor() : void
+}
+
+class "Recurso Primeira Instância" as Recurso1 {
+  - autoridadeSuperior : String
+  + apreciarRecurso() : void
+}
+
+class "Recurso Segunda Instância" as Recurso2 {
+  - autoridadeMaxima : String
+  + apreciarRecursoFinal() : void
+}
+
+Manifestacao <|-- PedidoAcesso
+Manifestacao <|-- Recurso
+Recurso <|-- Recurso1
+Recurso <|-- Recurso2
+
+' ==========================================================
+' HIERARQUIA 3: RESPOSTAS E PRIVACIDADE
+' ==========================================================
+abstract class "Resposta" as Resposta {
+  - dataResposta : Date
+  - texto : String
+  - agenteResponsavel : String
+  + publicar() : void
+}
+
+class "Resposta Deferida" as RespDeferida {
+  - linkAcesso : String
+  - formatoArquivo : String
+  + disponibilizarDados() : void
+}
+
+class "Resposta Parcialmente Deferida" as RespParcial {
+  - partesOcultadas : String
+  - justificativaRestricao : String
+  - enquadramentoLGPD : String
+  + indicarPrazoRecursal() : void
+}
+
+class "Resposta Indeferida" as RespIndeferida {
+  - motivoNegativa : String
+  - dispositivoLegalLAI : String
+  + indicarAutoridadeRecursal() : void
+}
+
+Resposta <|-- RespDeferida
+Resposta <|-- RespParcial
+Resposta <|-- RespIndeferida
+
+' ==========================================================
+' APOIO: ÓRGÃO E STATUS
+' ==========================================================
+class "Órgão Público" as Orgao {
+  - sigla : String
+  - nome : String
+  - esfera : String
+}
+
+enum "StatusManifestação" as Status {
+  EM_ELABORACAO
+  PROTOCOLADO
+  EM_ANALISE
+  AGUARDANDO_COMPLEMENTACAO
+  RESPONDIDO
+  EM_RECURSO_1
+  EM_RECURSO_2
+  ENCERRADO
+  CANCELADO
+}
+
+' ==========================================================
+' RELACIONAMENTOS E ASSOCIAÇÕES
+' ==========================================================
+Cidadao "0..1" -down-> "0..*" PedidoAcesso : submete >
+AgentePublico "0..*" -down-> "0..*" Manifestacao : analisa >
+Autoridade "1" -down-> "0..*" Recurso : julga >
+
+PedidoAcesso "1" -right-> "0..*" Recurso : motiva >
+Manifestacao "1" -left-> "0..1" Resposta : origina >
+
+PedidoAcesso "0..*" -down-> "1" Orgao : direcionado a >
+AgentePublico "0..*" -left-> "1" Orgao : lotado em >
+
+Manifestacao .right.> Status : possui status
+
+note bottom of Status
+  Ciclo de vida dos estados
+  detalhado no Diagrama de
+  Máquina de Estados (FOCO_02).
+end note
+
+@enduml
