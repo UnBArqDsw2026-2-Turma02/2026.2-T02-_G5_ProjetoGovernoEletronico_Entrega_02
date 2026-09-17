@@ -6,6 +6,8 @@
 
 ## Alunos
 
+<!-- TODO (equipe): completar a tabela com Tiago (SubEquipe 01) e os integrantes da SubEquipe 03 (nomes completos e matrículas). -->
+
 | Matrícula | Aluno |
 | --- | --- |
 | 23/1029270 | Pedro Henrique Martins Silva |
@@ -51,6 +53,26 @@ Referências utilizadas:
 * **Autores:** Luiz Henrique Pallavicini (Rascunho Inicial v1.0) e Pedro Henrique Martins Silva (Modelagem Dinâmica).
 * **Link Editável (Figma):** [Acessar Rascunho do Diagrama de Sequência](https://www.figma.com/make/Qe1S4LmGmd7aP9wgsaUF54/Rascunho-de-Diagrama?t=ba2uUdZsLMrTomvI-20&fullscreen=1)
 
+---
+
+### Diagrama de Classes (Herança) — SubEquipe 03
+
+![Diagrama de Classes](Base/Relatórios/ExtrasSubEquipe_03/Diagrama_de_Classes_Heranca_V01.png)
+
+**Ficha Técnica - Classes (Herança):**
+* **Autores:** SubEquipe 03 — Isaac Lucas, André João, Rivadalvio Joaquim e João Paulo Barros.
+* **Fonte Editável (PlantUML):** [Diagrama_de_Classes_Heranca_V01.puml](https://github.com/UnBArqDsw2026-2-Turma02/2026.2-T02-_G5_ProjetoGovernoEletronico_Entrega_02/blob/SubEquipe03/docs/Base/Relat%C3%B3rios/ExtrasSubEquipe_03/Diagrama_de_Classes_Heranca_V01.puml)
+
+---
+
+### Diagrama de Estado — SubEquipe 03
+
+![Diagrama de Estado](Base/Relatórios/ExtrasSubEquipe_03/Diagrama%20de%20Estado.jpeg)
+
+**Ficha Técnica - Estado:**
+* **Autores:** SubEquipe 03 — Isaac Lucas, André João, Rivadalvio Joaquim e João Paulo Barros.
+* **Arquivo:** [Diagrama de Estado (JPEG)](https://github.com/UnBArqDsw2026-2-Turma02/2026.2-T02-_G5_ProjetoGovernoEletronico_Entrega_02/blob/SubEquipe03/docs/Base/Relat%C3%B3rios/ExtrasSubEquipe_03/Diagrama%20de%20Estado.jpeg)
+
 ## Há algo a ser executado?
 
 (X) NÃO
@@ -65,3 +87,4 @@ Para garantir a transparência da evolução do projeto, as seguintes participa�
 
 * **Luiz Henrique Pallavicini:** Responsável pela análise crítica e evolução do *Diagrama de Componentes*, gerando a **versão 1.1** com os devidos ajustes nas regras e notações da UML. Também atuou na ideação primária do fluxo dinâmico, elaborando o **rascunho inicial** que baseou o Diagrama de Sequência e relatorio de IA generativa.
 * **Pedro Henrique Martins Silva:** Responsável pela diagramação estática original (v1.0) do *Diagrama de Componentes*, pela consolidação da diagramação dinâmica do *Diagrama de Sequência*, configuração do repositório/GitHub Pages e relatório de IA.
+* **Isaac Lucas, André João, Rivadalvio Joaquim e João Paulo Barros (SubEquipe 03):** Responsáveis pela elaboração conjunta do *Diagrama de Classes (herança)* (modelagem estática) e do *Diagrama de Estado* do fluxo do Pedido de Acesso à Informação (modelagem dinâmica), além dos pontos de vista sobre IA generativa (FOCO_03).

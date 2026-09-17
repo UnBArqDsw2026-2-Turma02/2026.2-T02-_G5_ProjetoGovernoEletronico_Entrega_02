@@ -16,5 +16,8 @@
       - [Insumo das alterações UML](Base/Relatórios/ExtrasSubEquipe_01/InsumoADS.png)
     - [1.1.2. SubEquipe_02](Base/Relatórios/1.1.2.SubEquipe_02.md)
     - [1.1.3. SubEquipe_03](Base/Relatórios/1.1.3.SubEquipe_03.md)
+      - [Diagrama de Classes (herança) V1.0 (PDF)](https://github.com/UnBArqDsw2026-2-Turma02/2026.2-T02-_G5_ProjetoGovernoEletronico_Entrega_02/blob/SubEquipe03/docs/Base/Relat%C3%B3rios/ExtrasSubEquipe_03/Diagrama_de_Classes_Heranca_V01.pdf)
+      - [Diagrama de Classes (herança) V1.0 (imagem)](https://github.com/UnBArqDsw2026-2-Turma02/2026.2-T02-_G5_ProjetoGovernoEletronico_Entrega_02/blob/SubEquipe03/docs/Base/Relat%C3%B3rios/ExtrasSubEquipe_03/Diagrama_de_Classes_Heranca_V01.png)
+      - [Diagrama de Estado (JPEG)](https://github.com/UnBArqDsw2026-2-Turma02/2026.2-T02-_G5_ProjetoGovernoEletronico_Entrega_02/blob/SubEquipe03/docs/Base/Relat%C3%B3rios/ExtrasSubEquipe_03/Diagrama%20de%20Estado.jpeg)
   - [1.2. Participações - Modelagem](Base/1.2.ParticipacoesModelagem.md)
   - [1.3. Iniciativas Extras - Modelagem](Base/1.3.IniciativasExtras.md)
