@@ -1,7 +1,7 @@
 # Ata de Reunião — Subgrupo 02
 
-**Data:** 64/09/2026  
-**Participantes:** Pedro Augusto Ribeiro Faitarone Bessa, Fabio Alessandro Santos Vieira e Lorena 
+**Data:** 16/09/2026  
+**Participantes:** Pedro Augusto Ribeiro Faitarone Bessa, Fabio Alessandro Santos Vieira e Lorena Ribeiro Martins 
 **Duração:** aproximadamente 45 minutos.
 
 ---
