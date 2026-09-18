@@ -15,19 +15,20 @@
 
 ## Sobre
 
-Este repositório contém os artefatos desenvolvidos para a **Entrega 02** da disciplina **Arquitetura e Desenho de Software (FGA0208)**, com foco na modelagem de um sistema utilizando a notação UML.
+Este repositório contém os artefatos e o protótipo interativo desenvolvidos para a **Entrega 02** da disciplina **Arquitetura e Desenho de Software (FGA0208)**.
 
-O projeto tem como objeto de estudo o portal **Informa.BR (informabr.cgu.gov.br)**, plataforma relacionada à Lei de Acesso à Informação (LAI), utilizada para gerenciamento e acompanhamento de solicitações de acesso à informação.
+O projeto tem como objeto de estudo o portal **Informa.BR (informabr.cgu.gov.br)**, plataforma relacionada à Lei de Acesso à Informação (LAI), utilizada para gerenciamento e acompanhamento de solicitações de acesso à informação. A interface foi projetada seguindo uma estética de *data-dense civic terminal*.
 
-A entrega contempla modelos estáticos e dinâmicos do sistema, buscando representar sua estrutura e comportamento por meio dos seguintes diagramas UML:
+A entrega contempla modelos estáticos e dinâmicos do sistema, aliados à materialização do fluxo através do frontend, englobando:
 
 - **Diagrama de Componentes (Modelagem Estática):**
-  Representa a organização dos principais componentes do sistema, suas responsabilidades e relacionamentos. O modelo desenvolvido considera a divisão entre Front-end Web, Back-end, Banco de Dados e o sistema de Acessibilidade, além dos componentes relacionados à interação com usuários, armazenamento de dados e funcionalidades específicas como BuscaLAI, FAQ, Notícias e Fóruns.
+  Representa a organização dos principais componentes do sistema, suas responsabilidades e relacionamentos. O modelo desenvolvido considera a divisão entre Front-end Web, Back-end, Banco de Dados e o sistema de Acessibilidade.
 
 - **Diagrama de Sequência (Modelagem Dinâmica):**
-  Representa o fluxo de interação para realização de um pedido de acesso à informação, considerando as interações entre o cidadão, a interface do Informa.BR, o processo de autenticação via GOV.BR, criação do pedido e armazenamento das informações.
+  Representa o fluxo de interação para realização de um pedido de acesso à informação, considerando as interações entre o cidadão, a interface do Informa.BR, e o armazenamento das informações.
 
-A modelagem foi desenvolvida utilizando como referência a documentação oficial da UML e exemplos de diagramas produzidos em entregas anteriores da disciplina.
+- **Protótipo Interativo (Frontend):**
+  Desenvolvimento do fluxo de navegação do usuário focado na criação de pedidos. O componente principal (`src/NovoPedido.tsx`) exibe um formulário *stepper* em tela cheia. Para simplificar a experiência do usuário, o diagrama de sequência animado que ficava na lateral foi descartado da interface final.
 
 Referências utilizadas:
 - Documentação UML - Component Diagrams: https://www.uml-diagrams.org/component.html
@@ -37,7 +38,6 @@ Referências utilizadas:
 ## Screenshots da Segunda Entrega
 
 ### Diagrama de Componentes
-
 
 **Ficha Técnica - Componentes:**
 * **Autores:** Pedro Henrique Martins Silva (Estrutura inicial v1.0) e Luiz Henrique Pallavicini (Refatoração para v1.1 ajustando regras UML).
@@ -75,16 +75,15 @@ Referências utilizadas:
 
 ## Há algo a ser executado?
 
-(X) NÃO
+( ) NÃO
 
-( ) SIM
+(X) SIM
 
-Não há aplicação ou código executável associado aos artefatos desta entrega. O objetivo desta etapa é exclusivamente a elaboração e documentação dos modelos UML do sistema estudado.
+Diferente da etapa puramente de modelagem, esta entrega conta com um protótipo interativo frontend que pode ser executado para validação do formulário passo a passo de criação de pedidos.
 
 ## Informações Complementares e Contribuições
 
 Para garantir a transparência da evolução do projeto, as seguintes participações diretas foram registradas nesta entrega:
 
-* **Luiz Henrique Pallavicini:** Responsável pela análise crítica e evolução do *Diagrama de Componentes*, gerando a **versão 1.1** com os devidos ajustes nas regras e notações da UML. Também atuou na ideação primária do fluxo dinâmico, elaborando o **rascunho inicial** que baseou o Diagrama de Sequência e relatorio de IA generativa.
-* **Pedro Henrique Martins Silva:** Responsável pela diagramação estática original (v1.0) do *Diagrama de Componentes*, pela consolidação da diagramação dinâmica do *Diagrama de Sequência*, configuração do repositório/GitHub Pages e relatório de IA.
-* **Isaac Lucas, André João, Rivadalvio Joaquim e João Paulo Barros (SubEquipe 03):** Responsáveis pela elaboração conjunta do *Diagrama de Classes (herança)* (modelagem estática) e do *Diagrama de Estado* do fluxo do Pedido de Acesso à Informação (modelagem dinâmica), além dos pontos de vista sobre IA generativa (FOCO_03).
+* **Luiz Henrique Pallavicini:** Responsável pela análise crítica e evolução do *Diagrama de Componentes* (versão 1.1) e ideação primária do fluxo dinâmico (rascunho inicial). Contribuiu ativamente no refinamento da experiência do usuário e nas decisões de design do protótipo interativo (estética *civic terminal*).
+* **Pedro Henrique Martins Silva:** Responsável pela diagramação estática original (v1.0) do *Diagrama de Componentes*, consolidação do *Diagrama de Sequência*, configuração do repositório/GitHub Pages, relatório de IA, e pelo desenvolvimento direto do protótipo interativo, com foco na simplificação do componente `src/NovoPedido.tsx` e implementação do formulário *stepper* em tela cheia.
